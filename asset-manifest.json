@@ -1,0 +1,13 @@
+{
+  "main.css": "/soundPlayer/static/css/main.8f27e130.chunk.css",
+  "main.js": "/soundPlayer/static/js/main.0aa09cc2.chunk.js",
+  "main.js.map": "/soundPlayer/static/js/main.0aa09cc2.chunk.js.map",
+  "static/js/1.35b2b2c4.chunk.js": "/soundPlayer/static/js/1.35b2b2c4.chunk.js",
+  "static/js/1.35b2b2c4.chunk.js.map": "/soundPlayer/static/js/1.35b2b2c4.chunk.js.map",
+  "runtime~main.js": "/soundPlayer/static/js/runtime~main.79f9cd1a.js",
+  "runtime~main.js.map": "/soundPlayer/static/js/runtime~main.79f9cd1a.js.map",
+  "static/css/main.8f27e130.chunk.css.map": "/soundPlayer/static/css/main.8f27e130.chunk.css.map",
+  "index.html": "/soundPlayer/index.html",
+  "precache-manifest.df271c8f22262de2029039db4f7fb306.js": "/soundPlayer/precache-manifest.df271c8f22262de2029039db4f7fb306.js",
+  "service-worker.js": "/soundPlayer/service-worker.js"
+}
