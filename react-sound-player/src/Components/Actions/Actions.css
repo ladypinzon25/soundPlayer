@@ -1,0 +1,92 @@
+.actions {
+  width: 90vw;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+
+.actions__big-image-album {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 8px white solid;
+  position: absolute;
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+}
+
+.actions__big-image-album.active {
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
+}
+
+.actions__image-container {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 8px white solid;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -40px;
+  left: 40px;
+  z-index: 1;
+}
+
+.actions__small-image-album {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px white solid;
+  background-color: rgb(214, 222, 231);
+  z-index: 3;
+}
+
+.actions__selection-container {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions__rewind-icon, .actions__forward-icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.actions__play-icon, .actions__pause-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.actions__play-button, .actions__pause-button, .actions__rewind-button,
+.actions__forward-button {
+  width: 80px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 64, 102);
+}
+
+.actions__play-button:hover, .actions__pause-button:hover, .actions__rewind-button:hover,
+.actions__forward-button:hover {
+  background-color: #04a1fb;
+  color: white !important;
+}
+
+@keyframes rotateAlbumArt {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

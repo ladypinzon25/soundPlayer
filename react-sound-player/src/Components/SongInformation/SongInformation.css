@@ -1,0 +1,91 @@
+.song-information {
+  height: 100px;
+  background-color: rgb(0, 64, 102);
+  position: absolute;
+  top: -100px;
+  right: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.song-information.enabled {
+  animation: 0.2s ease-in moveInTop;
+}
+
+.song-information.disabled {
+  animation: 0.2s ease-in moveInBottom;
+  top: 0;
+}
+
+.firstTime {
+  display: none;
+}
+
+.song-information__data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 15px;
+  left: 180px;
+}
+
+.song-information__song-name {
+  color: #04a1fb;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.song-information__artist {
+  color: #acaebd;
+  font-size: 13px;
+}
+
+.song-information__time-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #04a1fb;
+  font-size: 11px;
+  margin: 13px 0 3px 0;
+  font-weight: bold;
+}
+
+.song-information__time-bar {
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.song-information__progressive-time {
+  height: 4px;
+  background-color: #04a1fb;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+@keyframes moveInTop {
+
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
